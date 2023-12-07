@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,400;0,600;0,900;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+
+.lock {
+    overflow: hidden;
+}
+
+
+/* levels */
+.level_container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px 20px;
+}
+
+.levels {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.levels div p {
+
+    color: var(--primaty-black, #000);
+    /* Headings/ Heading 4 */
+    font-family: Dela Gothic One;
+    font-size: clamp(19px, 3vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 26px */
+    letter-spacing: -1.04px;
+
+
+}
+
+.levels div {
+    display: flex;
+}
+
+
+.level:first-child div {
+    background-color: #639B6D;
+    color: white;
+}
+
+.level:first-child {
+    border-bottom: 2px solid black;
+}
+
+.level_easy {
+    background-color: #CBDACC;
+    color: #639B6D;
+    margin-left: 8px;
+    font-size: clamp(10px, 1vw, 12px);
+    padding: 2px 5px 3px 5px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+
+.level_medium {
+    margin-left: 8px;
+    background-color: #E8DDC2;
+    color: #CBAC62;
+    font-size: 12px;
+    padding: 2px 5px 3px 5px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.level_hard {
+    margin-left: 8px;
+    background-color: #EAC7BF;
+    color: #CC624A;
+    font-size: 12px;
+    padding: 2px 5px 3px 5px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 992px) {
+    .levels {
+        width: 100%;
+        overflow-x: scroll;
+        gap: 25px;
+        justify-content: unset;
+    }
+    .levels::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+/* dict */
+.dictionary_element {
+    display: flex;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 14px;
+}
+
+div.dict_bar_container {
+    position: relative;
+    flex: 0 0 36%;
+}
+
+.dictionary_element .dict_bar_container .dict_statistic_bar div p {
+    color: white;
+    font-weight: 400;
+
+}
+
+.dict_hover_span {
+    display: none;
+}
+
+.dict_statistic_bar:hover .dict_hover_span {
+    display: inline;
+}
+
+.dict_image {
+    padding: 0;
+}
+
+img.dict_statistic_svg {
+    padding: 0px;
+    margin: 0px;
+}
+
+.dict_statistic_bar {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    min-width: 60px;
+    height: 120px;
+    background-color: rgb(0, 0, 0, 0.7);
+    justify-content: space-between;
+    border-radius: 8px 0 0 8px;
+
+}
+
+.dict_statistic_bar div {
+    flex: 1 0 17px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+
+.dictionary_element img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 14px 0 0 14px;
+
+}
+
+.dict_info_container {
+    padding: 30px;
+}
+
+.dictionary_element div div {
+    padding: 0;
+    display: flex;
+}
+
+.dict_first,
+.dict_second {
+    color: #000;
+    margin-right: 10px;
+    font-family: Dela Gothic One;
+    font-size: clamp(24px, 3.5vw, 30px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -1.28px;
+}
+
+.dict_third {
+    color: var(--primaty-grey-dark, #757575);
+    font-family: Dela Gothic One;
+    font-size: clamp(24px, 3.5vw, 30px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -1.28px;
+}
+
+.dictionary_element div div img {
+    display: block;
+    border-radius: 0;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#play_icon {
+    width: 35px;
+    height: 35px;
+    background-color: #F6F5F4;
+}
+
+.dict_first_elementblock a {
+    margin-left: auto;
+}
+
+.transcription {
+    color: black;
+
+}
+
+.dict_transcription {
+    display: flex;
+}
+
+.dict_transcription {
+    margin-top: 5px;
+    color: #000;
+    font-family: Montserrat;
+
+    font-size: clamp(12px, 2.5vw, 18px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.72px;
+}
+
+.compound {
+    color: #F6F5F4;
+    font-family: Montserrat;
+    font-size: clamp(10px, 2vw, 14px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.56px;
+    border-radius: 4px;
+    background: var(--secondary-orange, #CB5B43);
+    padding: 2px 10px;
+    margin-left: 15px;
+}
+
+.learned {
+    color: #F6F5F4;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.56px;
+    border-radius: 4px;
+    background: var(--secondary-orange, #639B6D);
+    padding: 2px 10px;
+    margin-left: 15px;
+}
+
+.dict_discription_1 {
+    margin-top: 10px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: clamp(12px, 2vw, 16px);
+    font-style: 500;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.64px;
+}
+
+.dict_discription_2 {
+    color: var(--primaty-grey-dark, #757575);
+    font-family: Montserrat;
+    font-size: clamp(12px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.64px;
+}
+
+.dict_line {
+    border: 0, 1px solid #E0E0E0;
+}
+
+.dict_tags {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.dict_to_learn {
+    color: var(--primaty-grey-light, #F6F5F4);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    margin-left: 0;
+
+}
+
+.dict_to_learn div a {
+    margin-left: 0;
+}
+
+
+.dict_to_learn a p {
+    border-radius: 100px;
+    background: var(--secondary-green, #639B6D);
+    padding: 12px 20px;
+}
+
+
+.dict_remove_from_dict p {
+    border-radius: 100px;
+    background: rgba(203, 91, 67, 0.30);
+    padding: 12px 20px;
+    color: var(--secondary-orange, #CB5B43);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.64px;
+    margin-left: 20px;
+}
+
+.dict_remove_from_learn p {
+    border-radius: 100px;
+    background: rgba(99, 155, 109, 0.30);
+    color: #639B6D;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.64px;
+    padding: 12px 20px;
+}
+
+.dict_add_to_dict p
+{
+    border-radius: 100px;
+    background: #CB5B43;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.64px;
+    padding: 12px 20px;
+    margin-left: 20px;
+}
+
+@media (max-width: 992px) {
+    .dictionary_element {
+        flex-direction: column;
+        
+    }
+    div.dict_bar_container {
+        flex: 0 0 36vw;
+        border-radius: 14px 14px 0 0;
+        overflow: hidden;
+    }
+    .dictionary_element img {
+        border-radius: unset;
+    }
+    .dict_statistic_bar {
+        height: 18vw;
+        width: 12.5vw;
+        min-width: unset;
+        top: 14.4vw;
+    }
+    .dictionary_element div div img {
+        width: 12px;
+        height: 12px;
+    }
+    .dictionary_element .dict_bar_container .dict_statistic_bar div p {
+        font-size: 12px;
+        margin-left: 8px;
+    }
+    .dict_tags {
+        gap: 12px;
+    }
+    .dict_remove_from_dict p,
+    .dict_add_to_dict p  {
+        margin-left: 0;
+    }
+}   

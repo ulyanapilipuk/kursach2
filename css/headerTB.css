@@ -1,0 +1,238 @@
+body{
+    font-family: "Montserrat";
+    margin: 0;
+    background: #F6F5F4;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-top{
+    background: #F6F5F4;
+    box-shadow: 0px -1px 0px 0px #E0E0E0 inset;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: -0.1px;
+    margin: 0;
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.menu{
+    align-items: center;
+    gap: 30px;
+}
+
+.vector{
+    width: 2px;
+    height: 17px;
+    background-color: #e0e0e0;
+}
+
+.item a{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.logo{
+    font-family: "Dela Gothic One";
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+}
+
+.item:nth-child(n+3) a{
+    color: #757575
+}
+
+.but{
+    display: flex;
+}
+
+.sub-menu {
+    display: none;
+    background-color: white;
+    border-radius: 14px;
+    width: 215px; 
+    padding: 20px;
+    box-shadow: 0px 11.449px 11.449px 0px rgba(52, 41, 39, 0.04), 0px 11.449px 68.694px 0px rgba(52, 41, 39, 0.04),
+        0px 68.694px 68.694px 0px rgba(52, 41, 39, 0.04), 0px 91.593px 91.593px 0px rgba(52, 41, 39, 0.04),
+        0px 183.185px 183.185px 0px rgba(52, 41, 39, 0.12), 0px 343.472px 343.472px 0px rgba(52, 41, 39, 0.08);
+}
+
+.main-item:focus ~ .sub-menu,
+.main-item:active ~ .sub-menu,
+.main-item:hover ~ .sub-menu,
+.sub-menu:hover {
+    display: block;
+    position: absolute;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 74px;
+}
+
+.avatar{
+    font-weight: 700;
+    line-height: 22.4px;
+    padding: 9px 14px;
+    color: #2B788B;
+    background-color: #C3DCE3;
+    border-radius: 100px;
+}
+
+.name{
+    font-weight: 600;
+    line-height: 22.4px;
+    color: #757575;
+}
+
+.sign{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sign p{
+    font-weight: 700;
+    line-height: 16px;
+}
+p{
+    margin: 0;
+}
+main{
+    max-width: 1291px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.spirit-out{
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 0px 22.89813px 45.79626px -11.44906px rgba(52, 41, 39, 0.08);
+    font-family: Montserrat;
+    padding: 60px 40px;
+    gap: 30px;
+}
+.spirit{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger {
+    display: none;
+}
+
+/* menu mobile */
+@media (max-width: 768px) {
+    .sign {
+        display: none;
+    }
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #F4F4F2;
+        z-index: 9;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        font-size: 16px;
+    }
+    .menu.menu-active {
+        display: flex;
+    }
+
+    .menu .vector {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 14px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .burger span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        transition: all .3s;
+    }
+
+    .burger::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 2px;
+        background: #000;
+        transition: all .3s;
+    }
+    .burger::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        height: 2px;
+        background: #000;
+        transition: all .3s;
+    }
+
+    .burger-active span {
+        opacity: 0;
+    }
+    .burger-active::before {
+        rotate: 45deg;
+        translate: 0 -50%;
+        top: 50%;
+    }
+    .burger-active::after {
+        rotate: -45deg;
+        translate: 0 50%;
+        bottom: 50%;
+    }
+}

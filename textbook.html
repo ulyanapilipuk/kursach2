@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/lolTB.css">
+    <link rel="stylesheet" href="./css/headerTB.css">
+    <link rel="stylesheet" href="./css/footerTB.css">
+    <link rel="stylesheet" href="./css/mainTB.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+
+            $(".dict_statistic_bar").hover(function () {
+                $(this).stop().animate({ width: '160px' }, 600);
+            }, function () {
+                $(this).stop().animate({ width: '60px'}, 300);
+            });
+
+        });
+    </script>
+      <title>Textbook</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <nav class="container">
+                <div class="burger">
+                    <span></span>
+                </div>
+                <div class="nav-left">
+                    <a href="index.html" class="logo">GlobalTalk</a>
+                    <ul class="menu">
+                        <li class="item">
+                            <div class="vector"></div>
+                        </li>
+                        <li class="item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="item">
+                            <a href="textbook.html">TextBook</a>
+                        </li>
+                        <li class="item">
+                            <a href="404.html">Statistics</a>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:void(0);" tabindex="1" class="main-item">
+                                <div class="but">
+                                    <p>Games</p>
+                                    <img src="./images/slide.svg" alt="slide">
+                                </div>
+                                <div class="sub-menu">
+                                    <a href="sprint1.html">Sprint 1 →</a>
+                                    <a href="sprint2.html">Sprint 2 →</a>
+                                    <a href="404.html">Audio-call →</a>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <a href="404.html" class="profile">
+                        <p class="avatar">A</p>
+                        <p class="name">Alex</p>
+                    </a>
+                    <a href="404.html" class="sign">
+                        <p>Sign Out</p>
+                        <img src="./images/arrow.svg" alt="arrow">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-search">
+            <div class="block">
+                <div class="left">
+                    <img src="./images/cap.svg" alt="">
+                    <div class="TextBook">
+                        <p>TextBook</p>
+                    </div>
+                    <div class="Dictionary">
+                        <span class="line"></span>
+                        <img src="./images/Vector.svg" alt="">
+                        <p>Dictionary</p>
+                    </div>
+                </div>
+                <div class="rigth">
+                    <div class="Sprint">
+                        <img src="./images/keds.png" alt="">
+                        <p>Sprint</p>
+                    </div>
+                    <div class="Audio-call">
+                        <img src="./images/rupor.png" alt="">
+                        <p>Audio-call</p>
+                    </div>
+                
+                <div class="Gear">
+                        <img src="./images/gear.svg" alt="">
+                    </div>
+                    <div class="hover-block">
+                        <div class="first-line">
+                            <input type="checkbox" class="btn" name="" id="checkbox1">
+                            <label for="checkbox1" class="custom-checkbox"><img src="./images/check.svg" alt=""></label>
+                            <p>Show words in a list</p>
+                        </div>
+                        <div class="second-line">
+                            <input type="checkbox" class="btn" name="" id="checkbox2">
+                            <label for="checkbox2" class="custom-checkbox"><img src="./images/check.svg" alt=""></label>
+                            <p>Display the 'Add' and 'Remove' buttons</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                
+            </div>
+        </div>
+         <div class="level_container">
+            <div class="levels">
+                <div class="level">
+                    <p>A1
+                    <div class="level_easy">Easy</div>
+                    </p>
+                </div>
+                <div class="level">
+                    <p>A2
+                    <div class="level_easy">Easy</div>
+                    </p>
+                </div>
+                <div class="level">
+                    <p>B1
+                    <div class="level_medium">Medium</div>
+                    </p>
+                </div>
+                <div class="level">
+                    <p>B2
+                    <div class="level_medium">Medium</div>
+                    </p>
+                </div>
+                <div class="level">
+                    <p>C1
+                    <div class="level_hard">Hard</div>
+                    </p>
+                </div>
+                <div class="level">
+                    <p>C2
+                    <div class="level_hard">Hard</div>
+                    </p>
+                </div>
+            </div>
+
+            <div class="dictionary_element">
+                <div class="dict_bar_container">
+                    <img src="./images/gallery/img_1.png" alt="">
+                    <div class="dict_statistic_bar" class="bar">
+                        <div>
+                            <img src="./images/gallery/svg/Bookmark.svg" alt="" class="dict_statistic_svg">
+                            <p>0 <span class="dict_hover_span">encountered</span></p>
+                        </div>
+                        <div>
+                            <img src="./images/gallery/svg/Star.svg" alt="" class="dict_statistic_svg">
+                            <p>0 <span class="dict_hover_span">learned </span></p>
+                        </div>
+                        <div>
+                            <img src="./images/gallery/svg/Lightning.svg" alt="" class="dict_statistic_svg">
+                            <p>0 <span class="dict_hover_span">best series</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dict_info_container">
+                    <div class="dict_first_elementblock">
+                        <span class="dict_first">remark</span>
+                        <span class="dict_second">/</span>
+                        <span class="dict_third">note</span>
+                        <a href="404.html" id=""><img src="./images/gallery/svg/play-icon.svg" alt="" id="play_icon"></a>
+                    </div>
+                    <div class="dict_transcription">
+                        <p>[rimɑ́ːrk]</p>
+                        <p class="compound">compound</p>
+                    </div>
+                    <p class="dict_discription_1">To remark is to say something. - Remarquer, c'est dire quelque chose
+                    </p>
+                    <hr class="dict_line">
+                    <p class="dict_discription_2">The teacher remarked on how quickly the students were learning.
+                        L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                    <div class="dict_tags">
+                        <div class="dict_to_learn">
+                            <a href="404.html">
+                                <p>Add to learned</p>
+                            </a>
+                        </div>
+                        <div class="dict_remove_from_dict">
+                            <a href="404.html">
+                                <p>Remove from dictionary</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dictionary_element">
+                <div class="dict_bar_container">
+                    <img src="./images/gallery/img_1.png" alt="">
+                    <div class="dict_statistic_bar" >
+                        <div>
+                            <img src="./images/gallery/svg/Bookmark.svg" alt="" class="dict_statistic_svg">
+                            <p>0 <span class="dict_hover_span">encountered</span></p>
+                        </div>
+                        <div>
+                            <img src="./images/gallery/svg/Star.svg" alt="" class="dict_statistic_svg">
+                            <p>0 <span class="dict_hover_span">learned </span></p>
+                        </div>
+                        <div>
+                            <img src="./images/gallery/svg/Lightning.svg" alt="" class="dict_statistic_svg">
+                            <p>0 <span class="dict_hover_span">best series</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dict_info_container">
+                    <div class="dict_first_elementblock">
+                        <span class="dict_first">awful</span>
+                        <span class="dict_second">/</span>
+                        <span class="dict_third">terrible</span>
+                        <a href="404.html" id=""><img src="./images/gallery/svg/play-icon.svg" alt="" id="play_icon"></a>
+                    </div>
+                    <div class="dict_transcription">
+                        <p class="transcription">[[ɔ́ːfəl]]</p>
+                        <p class="learned">learned</p>
+                    </div>
+                    <p class="dict_discription_1">To remark is to say something. - Remarquer, c'est dire quelque chose
+                    </p>
+                    <hr class="dict_line">
+                    <p class="dict_discription_2">The teacher remarked on how quickly the students were learning.
+                        L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                    <div class="dict_tags">
+                        <div class="dict_remove_from_learn">
+                            <a href="404.html">
+                                <p>Remove from learned</p>
+                            </a>
+                        </div>
+                        <div class="dict_add_to_dict">
+                            <a href="404.html">
+                                <p>Add to dictionary</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dictionary_element">
+                <div class="dict_bar_container">
+                    <img src="./images/gallery/img_1.png" alt="">
+                    <div class="dict_statistic_bar" class="bar">
+                        <div>
+                            <img src="./images/gallery/svg/Bookmark.svg" alt="" class="dict_statistic_svg">
+                            <p>0 <span class="dict_hover_span">encountered</span></p>
+                        </div>
+                        <div>
+                            <img src="./images/gallery/svg/Star.svg" alt="" class="dict_statistic_svg">
+                            <p>0 <span class="dict_hover_span">learned </span></p>
+                        </div>
+                        <div>
+                            <img src="./images/gallery/svg/Lightning.svg" alt="" class="dict_statistic_svg">
+                            <p>0 <span class="dict_hover_span">best series</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dict_info_container">
+                    <div class="dict_first_elementblock">
+                        <span class="dict_first">remark</span>
+                        <span class="dict_second">/</span>
+                        <span class="dict_third">note</span>
+                        <a href="404.html" id=""><img src="./images/gallery/svg/play-icon.svg" alt="" id="play_icon"></a>
+                    </div>
+                    <div class="dict_transcription">
+                        <p>[rimɑ́ːrk]</p>
+                        <p class="compound">compound</p>
+                    </div>
+                    <p class="dict_discription_1">To remark is to say something. - Remarquer, c'est dire quelque chose
+                    </p>
+                    <hr class="dict_line">
+                    <p class="dict_discription_2">The teacher remarked on how quickly the students were learning.
+                        L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                    <div class="dict_tags">
+                        <div class="dict_to_learn">
+                            <a href="404.html">
+                                <p>Add to learned</p>
+                            </a>
+                        </div>
+                        <div class="dict_remove_from_dict">
+                            <a href="404.html">
+                                <p>Remove from dictionary</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="swap-container">
+        <div class="swap-site">
+            <div class="backward"><a href="404.html">←</a></div>
+            <div><a href="404.html">1</a></div>
+            <div class="colored"><a href="404.html">2</a></div>
+            <div><a href="404.html">3</a></div>
+            <div class="grey-dot">...</div>
+            <div><a href="404.html">27</a></div>
+            <div><a href="404.html">28</a></div>
+            <div><a href="404.html">29</a></div>
+            <div class="forward"><a href="404.html">→</a></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <ul class="footer-top-left">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="textbook.html">Textbook</a></li>
+                    <li><a href="404.html">Statistics</a></li>
+                    <li><a href="404.html">Sprint</a></li>
+                    <li><a href="404.html">Audio-call</a></li>
+                </ul>
+                <ul class="footer-top-right">
+                    <li><a href="404.html">Alex</a></li>
+                    <li><a href="404.html">Gabriel</a></li>
+                    <li><a href="404.html">Marcus</a></li>
+                </ul>
+            </div>
+            <div class="line"></div>
+            <div class="footer-bottom">
+                <div class="social">
+                    <a href="404.html"><img src="./images/Frame 30.png" alt="Social-1"></a>
+                    <a href="404.html"><img src="./images/Frame 33.png" alt="Social-2"></a>
+                    <a href="404.html"><img src="./images/Frame 31.png" alt="Social-3"></a>
+                </div>
+                <p>©2021 GlobalTalk. Project for <u>GlobalTalk</u>.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/scriptTB.js"></script>
+</body>
+
+</html>
